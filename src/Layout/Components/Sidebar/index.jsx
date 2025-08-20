@@ -1,4 +1,4 @@
-import { SidebarLogo, SidebarMenuItems } from "./components";
+import { SidebarLogo, SidebarMenuItems } from "./Components";
 import { CloseOutlined } from "@ant-design/icons";
 import './style.scss'
 
