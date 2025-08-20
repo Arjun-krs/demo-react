@@ -4,8 +4,8 @@ import { Provider } from "react-redux";
 import MainRoutes from './Routes'
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-import { SidebarProvider } from './context/SidebarContext';
 import store from './Redux/store';
+import { SidebarProvider } from './Context/SidebarContext';
 
 const App = () => {
   return (
