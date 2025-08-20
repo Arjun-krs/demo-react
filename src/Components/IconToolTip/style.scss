@@ -1,0 +1,19 @@
+@use "../../utils/variables.scss" as var;
+
+:where(.ant-popover) .ant-popover-inner {
+  background-color: var.$toolTipBg !important;
+  color: var.$black_clr !important;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+:where(.ant-popover) .ant-popover-arrow::before {
+  background-color: var.$toolTipBg !important;
+}
+
+:where(.ant-popover) .ant-popover-inner-content {
+  padding: 0;
+  margin: 0;
+}

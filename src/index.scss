@@ -1,0 +1,74 @@
+@use "tailwindcss" as *;
+@use "./utils/base.scss" as base;
+@use "./Utils/variables.scss" as var;
+
+* {
+  font-family: base.$font_family !important;
+}
+
+body {
+  font-family: base.$font_family !important;
+}
+
+h1 {
+  font-size: base.$h1;
+  font-weight: base.$font_weight_700;
+  line-height: base.$line_height_h1;
+  color: 'blue';
+}
+
+h2 {
+  font-size: base.$h2;
+  font-weight: base.$font_weight_600;
+  line-height: base.$line_height_h2;
+  color: var.$black_clr;
+}
+
+h3 {
+  font-size: base.$h3;
+  font-weight: base.$font_weight_600;
+  line-height: base.$line_height_h3;
+  color: var.$black_clr;
+}
+
+h4 {
+  font-size: base.$h4;
+  font-weight: base.$font_weight_500;
+  line-height: base.$line_height_h4;
+  color: var.$black_clr;
+}
+
+h5 {
+  font-size: base.$h5;
+  font-weight: base.$font_weight_500;
+  line-height: base.$line_height_h5;
+  color: var.$black_clr;
+}
+
+.body_small {
+  font-size: base.$body_small;
+  font-weight: base.$font_weight_400;
+  line-height: base.$line_height_body_small;
+  color: var.$black_clr;
+}
+
+.body_medium {
+  font-size: base.$body_medium;
+  font-weight: base.$font_weight_400;
+  line-height: base.$line_height_body_medium;
+  color: var.$black_clr;
+}
+
+.body_large {
+  font-size: base.$body_large;
+  font-weight: base.$font_weight_400;
+  line-height: base.$line_height_body_large;
+  color: var.$black_clr;
+}
+
+.captions {
+  font-size: base.$captions;
+  font-weight: base.$font_weight_500;
+  line-height: base.$line_height_captions;
+  color: var.$black_clr;
+}

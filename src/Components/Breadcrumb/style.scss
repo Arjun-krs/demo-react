@@ -1,0 +1,36 @@
+@use "../../utils/variables.scss" as var;
+
+.ant-breadcrumb {
+  ol {
+    align-items: center;
+
+    li {
+      .ant-breadcrumb-link {
+        a {
+          color: var.$mutedText;
+          font-size: 16px;
+          font-weight: 900;
+          &:hover {
+            background-color: transparent !important;
+            color: var.$secondaryColor;
+          }
+        }
+      }
+
+      &:last-child {
+        .ant-breadcrumb-link {
+          a {
+            color: var.$primaryColor !important;
+            pointer-events: none;
+            cursor: default;
+          }
+        }
+      }
+    }
+
+    .ant-breadcrumb-separator {
+      color: var.$mutedText;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@use "../../utils/variables.scss" as var;
+
+.custom-dropdown {
+  border-color: var.$black_clr;
+
+  .ant-select-selector {
+    padding: 20px 10px;
+    border: 1px solid var.$black_clr;
+    border-color: var.$black_clr;
+    transition: border-color 0.3s;
+    font-size: 14px;
+
+    &:hover {
+      border-color: var.$black_clr !important;
+      box-shadow: none !important;
+    }
+
+    &:active {
+      box-shadow: none !important;
+    }
+  }
+
+  .ant-select-selection-placeholder,
+  .ant-select-selection-search-input {
+    font-size: 14px;
+  }
+
+  .dropdown__wrapper.ant-select-focused .ant-select-selector {
+    box-shadow: none !important;
+    border-color: var.$black_clr !important;
+  }
+
+  .ant-select-single {
+    height: 44px;
+  }
+}

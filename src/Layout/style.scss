@@ -1,0 +1,18 @@
+@use "../Utils/variables.scss" as var;
+
+.logged__out {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var.$white_clr;
+}
+
+.layout_bg {
+    background: linear-gradient(to bottom, #FFFFFF 0%, #8A9FA2 100%);
+}
+
+.content_wrapper {
+    background: var.$bg_primary_clr;
+    margin: 12px;
+    border-radius: 24px;
+}

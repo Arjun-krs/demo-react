@@ -1,0 +1,30 @@
+@use "../../utils/variables.scss" as var;
+
+* {
+  font-family: "Cabin", sans-serif;
+}
+
+.textInput__wrapper {
+  .textInput__container {
+    padding: 10px;
+    border: 1px solid var.$primary_clr;
+    border-radius: 8px;
+    color: var.$primary_clr;
+
+    &:focus,
+    &:focus-within {
+      border-color: var.$primary_50;
+      box-shadow: 0 0 5px var.$primary_50;
+      outline: none;
+      color: var.$primary_clr;
+    }
+  }
+
+  .ant-input-outlined:focus,
+  .ant-input-outlined:focus-within {
+    border-color: var.$primary_clr !important;
+    box-shadow: 0 0 5px var.$primary_50 !important;
+    outline: none !important;
+    color: var.$primary_clr !important;
+  }
+}
