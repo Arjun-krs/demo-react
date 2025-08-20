@@ -1,4 +1,4 @@
-@use "../../utils/variables.scss" as var;
+@use "../../Utils/variables.scss" as var;
 
 :where(.ant-popover) .ant-popover-inner {
   background-color: var.$toolTipBg !important;
