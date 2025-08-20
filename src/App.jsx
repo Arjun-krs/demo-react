@@ -14,7 +14,7 @@ const App = () => {
         <SidebarProvider>
           <MainRoutes />
         </SidebarProvider>
-      </BrowserRouter>
+      </BrowserRouter> 
     </Provider>
   )
 }
