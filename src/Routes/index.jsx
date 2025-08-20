@@ -21,8 +21,8 @@ const RouteComponent = () => {
     const timestamp = getUnixTimestamp();
     const signature = generateSignature(password, timestamp);
 
-    console.log("Timestamp:", timestamp);
-    console.log("Signature:", signature);
+    // console.log("Timestamp:", timestamp);
+    // console.log("Signature:", signature);
 
     useEffect(() => {
         const payload = {
@@ -30,10 +30,17 @@ const RouteComponent = () => {
             account: 'TProject1',
             signature: signature
         }
-        dispatch(authCheck(payload)).then((res) => {
-            console.log('authCheck res----------', res);
 
-        })
+        const fetchData = async () => {
+            const res = await fetch("/api/protrack");
+            const data = await res.json();
+            console.log(data);
+        };
+        fetchData();
+        // dispatch(authCheck(payload)).then((res) => {
+        //     // console.log('authCheck res----------', res);
+
+        // })
     }, [])
 
     return (

@@ -23,7 +23,6 @@ export const vehicleList = createAsyncThunk(
 export const authCheck = createAsyncThunk(
     'auth/check',
     async (payload, { rejectWithValue }) => {
-        console.log('payload',payload);
         
         try {
             const config = {

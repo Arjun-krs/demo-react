@@ -120,6 +120,4 @@ const data = record.split(";").filter(Boolean).map(item => {
   };
 });
 
-console.log(data);
-
 export const vehicleRoutes = data
