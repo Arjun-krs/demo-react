@@ -4,6 +4,7 @@ import { BikeImg, CarImg, HilluxImg, LorryImg, StreamRollerImg, TractorImg, VanI
 
 const VehicleCard = ({ vehicle, className, onOptions }) => {
     const dropdownRef = useRef(null);
+console.log('vehicle sidebar',vehicle);
 
     const renderVehicleIcon = () => {
         const type = vehicle?.VehicleCategory?.Category?.toLowerCase()
@@ -41,7 +42,7 @@ const VehicleCard = ({ vehicle, className, onOptions }) => {
             <div className="flex gap-[8px] items-center">
                 {renderVehicleIcon()}
                 <div>
-                    <p className='!text-[18px] !text-[#1F1F1F]'>{vehicle?.VehicleNumber}</p>
+                    <p className='!text-[18px] !text-[#1F1F1F]'>{vehicle?.devicename}</p>
                     {vehicle?.routeData && (
                         <p className='!text-[#696969]'>{`${vehicle?.routeData?.travelled}km / ${vehicle?.routeData?.total}km`}</p>
                     )}

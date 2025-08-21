@@ -5,7 +5,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 import { useMapWithCurrentLocation } from './Hooks/useMapWithCurrentLocation';
 import MapSidebar from './MapComponents/MapSidebar';
-import { vehicleList } from '../../Redux/Action';
+import { DeviceList, vehicleList } from '../../Redux/Action';
 import { useMapWithFleetRoutes } from './Hooks/useMapWithFleetRoutes';
 import { vehicleRoutes } from './StaticData';
 import { Popup } from '../../Components';
@@ -53,11 +53,18 @@ const MapWrapper = () => {
     useMapWithFleetRoutes({ selectedVehicle: mapData.selectedVehicle, fleetRoutes: vehicleRoutes, mapRef, mapContainerRef, markerRef, animationRef }); // for tracking
     useMapWithCurrentLocation({ fleetRoutes: vehicleRoutes, selectedVehicle: mapData.selectedVehicle, mapRef, mapContainerRef, markerRef });
 
-    useEffect(() => {
-        dispatch(vehicleList()).then((res) => {
-            setMapData((prev) => ({ ...prev, vehicleList: res?.payload?.data }));
-        })
-    }, [])
+    // useEffect(() => {
+    //     const AccessToken = localStorage.getItem('protrackerToken')
+    //     console.log('AccessToken', AccessToken);
+
+    //     // dispatch(vehicleList()).then((res) => {
+    //     //     setMapData((prev) => ({ ...prev, vehicleList: res?.payload?.data }));
+    //     // })
+    //     dispatch(DeviceList({ accessToken: AccessToken, account: 'TProject1' })).then((res) => {
+    //         console.log('Device list api response', res);
+    //         setMapData((prev) => ({ ...prev, vehicleList: res?.payload.record }));
+    //     })
+    // }, [])
 
     useEffect(() => {
         if (!mapData.selectedVehicle) return;

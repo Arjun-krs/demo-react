@@ -7,4 +7,10 @@ export const sidebarNavItems = [
     to: "/",
     section: "tracking",
   },
+  {
+    display: "Components",
+    icon: <DashboardOutlined />,
+    to: "/components",
+    section: "components",
+  },
 ];

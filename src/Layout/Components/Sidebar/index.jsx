@@ -12,10 +12,10 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                         <CloseOutlined />
                     </button>
                 </div>
-
+                {/* 
                 <div className="p-4 h-[60px]">
                     <SidebarLogo />
-                </div>
+                </div> */}
 
                 <div className="flex-1 overflow-y-auto scrollbar_hide" style={{ height: "calc(100vh - 60px)" }}>
                     <SidebarMenuItems />

@@ -5,6 +5,7 @@ import TextInput from "./TextInput";
 import DatePicker from "./DatePicker";
 import Popup from "./Popup";
 import IconToolTip from "./IconToolTip";
+import AnimatedCard from "./AnimatedCard";
 
 export {
     Loader,
@@ -13,5 +14,6 @@ export {
     TextInput,
     DatePicker,
     Popup,
-    IconToolTip
+    IconToolTip,
+    AnimatedCard
 }
